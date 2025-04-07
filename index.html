@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Insta</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light py-3">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between">
+                <div>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <h5 class="d-inline-block fs-5">Instagram</h5>
+                </div>
+                <div class="d-flex align-right justify-content-end">
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Caption:</label>
+                  <textarea class="form-control" placeholder="Add the caption of your post here" id="message-text"></textarea>
+                  <div class="row p-2">
+                    <button class="col-1 border rounded p-1 m-1 btn-light">
+                        <i class="fa-solid fa-camera"></i>
+                    </button>
+                    <button class="col-1 border rounded p-1 m-1 btn-light">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- tabs -->
+<div class="container-fluid p-2">
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+    </ul>
+    <div class="tab-content" id="insta-tab">
+      <div class="tab-pane fade show active" id="home" role="tabpanel"aria-labelledby="home-tab">
+        <div class="row">
+          <div class="col-sm-4 p-1"><img class="w-100 h-100 object-fit-cover"
+            src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Cetonia-aurata.jpg"alt="">
+          </div>
+          <div class="col-sm-4 p-1"><img class="w-100 h-100 object-fit-cover"
+            src="https://quo.eldiario.es/imagenes_quo/es.h-cdn.co/quoes/images/naturaleza/la-mantis-orquidea-una-peligrosa-infiltrada-entre-las-flores/0_mantisorquidea/932610-1-esl-ES/0_mantisorquidea.jpg?resize=480:*"alt="">
+          </div>
+          <div class="col-sm-4 p-1"><img class="w-100 h-100 object-fit-cover"
+            src="https://static.wikia.nocookie.net/insect/images/e/e4/Image.jpeg/revision/latest?cb=20160114024800"alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-1"><img class="w-100 h-80 object-fit-cover"
+            src="https://static.nationalgeographic.es/files/styles/image_3200/public/02-peacock-spider-9678_9679_9680.webp?w=1190&h=911"alt="">
+          </div>
+          <div class="col-sm-4 p-1"><img class="w-100 h-100 object-fit-cover"
+            src="https://www.autopista.es/uploads/s1/10/25/87/58/la-libelula-es-un-insecto-fascinante.jpeg"alt="">
+          </div>
+          <div class="col-sm-4 p-1"><img class="w-100 h-100 object-fit-cover"
+            src="https://blog.3bee.com/_next/image/?url=https%3A%2F%2Fapi-backend-assets.s3.eu-south-1.amazonaws.com%2Fprivate%2Ffiler_public%2F86%2F24%2F86246e6d-48c3-4881-9ed9-5ec57071ce5b%2F1640587a-aef8-44c9-9e7a-fae4f9b2499b.jpg&w=3840&q=75"alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-1"><img class="w-100 h-100 object-fit-cover"
+            src="https://i.pinimg.com/564x/7e/3a/53/7e3a53cd56c5edde25637526f0cf9e63.jpg"alt="">
+          </div>
+          <div class="col-sm-4 p-1"><img class="w-100 h-100 object-fit-cover"
+            src="https://supercurioso.com/wp-content/uploads/2019/02/saltamontes-rosa-portada.jpg"alt="">
+          </div>
+          <div class="col-sm-4 p-1"><img class="w-100 h-100 object-fit-cover"
+            src="https://www.canonistas.com/galerias/data/500/mariquita_en_flor.JPG"alt="">
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="row my-4">
+          <div class="col-6 mx-auto border rounded p-0">
+              <div class="d-flex p-2">
+                  <div class="w-100 fs-4"><strong>Cetonia aurata</strong></div>
+                  <small class="align-bottom">11/28</small>
+              </div>
+              <img style="object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Cetonia-aurata.jpg" class="img-fluid w-100 col-12" alt=""/>
+              <div class="p-2">
+                  <strong>5315186 Likes</strong>
+                  <p>Unos escarabajos muy bonitos, de color verde dorado brillante, que buscan el polen y devoran los pétalos de las Rosas. Los escarabajos adultos comen flores mientras que las larvas no hacen ningún daño. Las Flores parcial o totalmente devoradas. Capullos, hojas y brotes comidos.</p>
+              </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-6 mx-auto border rounded p-0">
+              <div class="d-flex p-2">
+                  <div class="w-100 fs-4"><strong>Hymenopus coronatus (Mantis orquídea)</strong></div>
+                  <small class="align-bottom">01/30</small>
+              </div>
+              <img style="object-fit: cover;" src="https://quo.eldiario.es/imagenes_quo/es.h-cdn.co/quoes/images/naturaleza/la-mantis-orquidea-una-peligrosa-infiltrada-entre-las-flores/0_mantisorquidea/932610-1-esl-ES/0_mantisorquidea.jpg?resize=480:*" class="img-fluid w-100 col-12" alt=""/>
+              <div class="p-2">
+                  <strong>86413522 Likes</strong>
+                  <p> Es una especie originaria de las selvas pluviales de Sumatra, Indonesia y Malasia. Suelen encontrarse en las cercanías de flores en las que puedan mimetizarse (principalmente de colores rosa y blanco).</p>
+              </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-6 mx-auto border rounded p-0">
+              <div class="d-flex p-2">
+                  <div class="w-100 fs-4"><strong>Araña Pavo real (Maratus Volans)</strong></div>
+                  <small class="align-bottom">01/26</small>
+              </div>
+              <img style="object-fit: cover;" src="https://static.nationalgeographic.es/files/styles/image_3200/public/02-peacock-spider-9678_9679_9680.webp?w=1190&h=911" class="img-fluid w-100 col-12" alt=""/>
+              <div class="p-2">
+                  <strong>684131251 Likes</strong>
+                  <p>Conocida científicamente como Maratus volans, la araña pavo real es una especie única que habita en Australia, en áreas boscosas y húmedas donde se encuentra en las condiciones ideales para sobrevivir y reproducirse. El nombre por el que se la conoce coloquialmente proviene de su llamativo patrón de colores y su característico comportamiento de exhibición que recuerda al cortejo del ave del mismo nombre. </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+</div>
+
+
+
+<!-- not touching this -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>
